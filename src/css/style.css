@@ -235,3 +235,172 @@ button.btn-primary-white div .triangle-button {
 }
 
 /* end home */
+
+/* respond */
+.respond-text p{
+    font-size: 20px;
+}
+
+.respond-text h5{
+    font-size: 35px;
+}
+
+.img-respond{
+    width: 80%;
+}
+
+.img-footer{
+    width: 65px;
+    height: 42px;
+}
+
+@media screen and (max-width: 991px) {
+    .img-respond{
+        width: 90%;
+    }
+
+    .respond-text p{
+        font-size: 18px;
+    }
+
+    .respond-text h5{
+        font-size: 30px;
+    }
+
+    .img-footer{
+        width: 60px;
+        height: 38px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .img-respond{
+        width: 80%;
+    }
+
+    .respond-text p{
+        font-size: 16px;
+    }
+
+    .respond-text h5{
+        font-size: 22px;
+    }
+
+    .img-footer{
+        width: 55px;
+        height: 33px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .img-respond{
+        width: 60%;
+    }
+
+    .respond-text p{
+        font-size: 16px;
+    }
+
+    .respond-text h5{
+        font-size: 20px;
+    }
+}
+/* end respond */
+
+/* home */
+
+.bg-home{
+    background-image: linear-gradient(rgba(79, 149, 236,0.6),rgba(79, 149, 236,0.6)),url(../../img/sma.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.main{
+    padding-top: 15%;
+    padding-bottom: 241px;
+}
+
+.btn-white{
+    background-color: white;
+
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.b-0{
+    bottom: 0px;
+}
+
+@media screen and (max-width: 991px) {
+    .main{
+        padding-top: 30%;
+        padding-bottom: 241px;
+    }
+
+    .main h1{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .main h1{
+        font-size: 25px;
+    }
+}
+
+/*end home */
+
+/* verify*/
+.input-verify{
+    background-color: #F7F7F7;
+    border: none;
+    border-radius: 5px;
+    height: 120px;
+    font-size: 100px;
+    color: grey;
+}
+
+.btn-verify{
+    bottom: -20px;
+    right: 0;
+
+}
+
+@media screen and (max-width: 991px) {
+    .input-verify{
+        border-radius: 50px;
+        height: 80px;
+        font-size: 70px;
+        color: grey;
+    }
+
+    .card p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main{
+        padding-top: 50%;
+        padding-bottom: 241px;
+    }
+
+    .main h1{
+        font-size: 25px;
+    }
+}
+
+
+
+
+/* end verify */
