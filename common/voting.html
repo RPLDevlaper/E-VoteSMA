@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting</title>
+    <link rel="shortcut icon" href="../img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/all.min.css">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow position-fixed w-100">
+        <a class="navbar-brand" href="#">
+            <div class="d-flex">
+                <img src="../img/logo/smanesa.png" width="40px" height="40px" class="mt-2 mx-3" alt=""> 
+                <div class="d-inline-block mt-2" style="font-size: .9rem;">
+                    E-VOTING <br> <span class="position-relative" style="top: -5px;">SMANESA</span>
+                </div>
+            </div>
+        </a>
+        <button onclick="window.location.href = '../index.html'" class="ml-auto btn btn-primary my-2 my-sm-0 px-4 py-2" type="submit">Back to home</button>
+    </nav>
+
+    <div class="container-fluid position-relative pb-5" style="overflow-x: hidden !important;">
+        <img src="../img/vector/batik.png" style="top: -100px; left: 0;" class="position-absolute w-100" alt="">
+         <div class="container position-relative">
+            <div class="row py-5 mt-5">
+                <div class="col-md-12 text-center py-4 mb-3">
+                    <h2 class="mb-0 mt-4">Hai <span class="text-primary">User</span>, <br> Pilih Ketua Osis Pilihanmu</h2>
+                    <p>Dengan cara tab 2kali gambar calon pilihanmu</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 px-md-5 px-0 my-md-0 my-3">
+                    <div class="img-vote position-relative" data-voteId="1" style="background-image: url('../img/calon/vote1.png');">
+                        <div class="overlay-primary position-relative text-center">
+                            <i class="fas fa-check text-white check-voting" id="id_check" style="font-size: 5rem;"></i>
+                        </div>
+                    </div>
+                    <div class="position-relative py-2 text-center">
+                        <div class="ketua pb-1">
+                            <p class="mb-0 text-gray">Ketua</p>
+                            <h4>Syifa Azzahra Irawan ( Mipa 8 '19 )</h4>
+                        </div>
+                        <div class="wakil-ketua pb-3">
+                            <p class="mb-0 text-gray">Wakil Ketua</p>
+                            <h4>Attah Ullah ( Ips 1 '20 )</h4>
+                        </div>
+                        <button class="btn btn-primary px-5 btn-visi">Lihat Visi Misi</button>
+                    </div>
+                    <div class="noId-vote text-center w-100 position-absolute">
+                        <div class="d-inline-block noId text-center text-white font-weight-bold">
+                            1
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 px-md-5 px-0 my-md-0 my-3">
+                    <div class="img-vote position-relative" data-voteId="2" style="background-image: url('../img/calon/vote2.png');">
+                        <div class="overlay-primary position-relative text-center">
+                            <i class="fas fa-check text-white check-voting" id="id_check" style="font-size: 5rem;"></i>
+                        </div>
+                    </div>
+                    <div class="position-relative py-2 text-center">
+                        <div class="ketua pb-1">
+                            <p class="mb-0 text-gray">Ketua</p>
+                            <h4>Annisa Salma Nirmalasari ( Ips 1 '19 )</h4>
+                        </div>
+                        <div class="wakil-ketua pb-3">
+                            <p class="mb-0 text-gray">Wakil Ketua</p>
+                            <h4>Catur Anugrah ( Mipa 6 '20 )</h4>
+                        </div>
+                        <button class="btn btn-primary px-5 btn-visi">Lihat Visi Misi</button>
+                    </div>
+                    <div class="noId-vote text-center w-100 position-absolute">
+                        <div class="d-inline-block noId text-center text-white font-weight-bold">
+                            2
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pb-5 pt-4" id="form-voting">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <input type="hidden" id="id_voting" name="id_voting" class="form-control">
+                <button id="submit_voting" class="btn btn-primary btn-lg px-5 w-75 btn-disabled" disabled>Voting</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-3 pb-5 px-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../img/developer.png" class="mr-2" width="30px" alt="">
+                @2020 Developed by <a href="https://www.instagram.com/sidescript_dev/">SideScript Developer</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-black w-100 h-100 position-absolute" id="visi-misi" style="overflow-y: auto;">
+        <i class="fas fa-times position-absolute text-white" style="font-size: 2rem;" id="closable-visi-misi"></i>
+        <div class="container py-5 text-white">
+            <div class="row py-4">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 border-bottom">
+                            <h4>Visi</h4>
+                        </div>
+                    </div>
+                    <p id="visi-text" class="pt-2 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, laboriosam inventore deleniti, maxime, dolorem placeat unde praesentium quos odio dolorum quisquam repudiandae incidunt asperiores iste consectetur veritatis tenetur ea temporibus esse omnis harum officiis. Voluptatum eligendi delectus autem illo. Iste!</p>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 border-bottom">
+                            <h4>Misi</h4>
+                        </div>
+                    </div>
+                    <ol class="pt-2 pb-5 pl-4">
+                        <li>Meningkatkan karakter siswa - siswi SMAN 1 Purwosari beriman serta taat kepada tuhan yang maha esa</li>
+                        <li>Mengembangkan rasa kekeluargaan dalam nasionalisme</li>
+                        <li>Meningkatkan kreatifitas siswa - siswi dalam berbahasa </li>
+                        <li>Menumbuhkan rasa peduli lingkungan kepada siswa - siswi SMAN 1 Purwosari</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../src/js/jquery-3.5.1.min.js"></script>
+<script src="../src/js/bootstrap.min.js"></script>
+<script src="../src/js/all.min.js"></script>
+<script src="../src/js/fontawesome.min.js"></script>
+<script src="../src/js/script.js"></script>
+</html>
