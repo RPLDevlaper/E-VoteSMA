@@ -33,55 +33,179 @@
         </div>
     </div>
 
-    <div class="container py-5">
-        <div class="row py-4 mt-5">
+    <div class="container pt-5">
+        <div class="row pt-4 mt-5">
             <div class="col-md-8 offset-md-2 py-5 mt-5">
-                <div class="w-100 py-4 mt-5 rounded bg-white">
-                    <h4 class="px-4">Formulir Pendaftaran Voting</h4>
-                    <div class="row px-4 py-3">
+                <div class="w-100 pt-4 mt-5 rounded-lg bg-white shadow">
+                    <h4 class="px-5">Formulir Pendaftaran Voting</h4>
+                    <div class="row px-5 py-3">
                         <div class="col-4">
-                            <div class="ctr-user w-100 pt-4 pb-3 text-center bg-primary-light rounded">
+                            <div class="ctr-user w-100 pt-4 pb-3 text-center bg-primary-light rounded" id="siswa-toggle">
                                 <img src="../img/icon/siswa.png" height="50px" alt="">
                                 <h5 class="text-black">Siswa</h5>
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="ctr-user w-100 pt-4 pb-3 text-center border rounded">
+                            <div class="ctr-user w-100 pt-4 pb-3 text-center border rounded" id="guru-toggle">
                                 <img src="../img/icon/guru.png" height="50px" alt="">
                                 <h5 class="text-black">Guru</h5>
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="ctr-user w-100 pt-4 pb-3 text-center border rounded">
+                            <div class="ctr-user w-100 pt-4 pb-3 text-center border rounded" id="lainnya-toggle">
                                 <img src="../img/icon/lainnya.png" height="50px" alt="">
-                                <h5 class="text-black">Siswa</h5>
+                                <h5 class="text-black">Lainnya</h5>
                             </div>
                         </div>
                     </div>
-                    <form action="">
-                        <div class="px-4">
-                            <div class="group w-100">      
-                                <input class="input-google w-100" type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Name</label>
+                    <form action="" id="siswa-form" class="w-100 d-inline-block">
+                        <div class="holder px-5 py-2">
+                            <div class="input-holder">
+                              <input class="input py-4 w-100" type="text" placeholder=" ">
+                              <div class="placeholder">Nisn</div>
                             </div>
                         </div>
-                        <div class="form-group px-4 pt-2">
-                            <label for="nama_user">Nama</label>
-                            <input required type="text" name="nama_user" id="nama_user" class="form-control" placeholder="Namamu..." aria-describedby="namaId">
-                            <small id="namaId" class="text-muted"></small>
+                        <div class="container px-5">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="holder py-3">
+                                        <div class="input-holder">
+                                            <select class="w-100" name="gender" id="gender">
+                                                <option>Mas</option>
+                                                <option>Mbak</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="holder py-3">
+                                        <div class="input-holder">
+                                          <input class="input py-4 w-100" type="text" placeholder=" ">
+                                          <div class="placeholder">Nama</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group px-4 pt-2">
-                            <label for="nama_user">Nama</label>
-                            <input required type="text" name="nama_user" id="nama_user" class="form-control" placeholder="Namamu..." aria-describedby="namaId">
-                            <small id="namaId" class="text-muted"></small>
+                        <div class="holder px-5 py-2">
+                            <div class="input-holder">
+                              <input class="input py-4 w-100" type="text" placeholder=" ">
+                              <div class="placeholder">Email</div>
+                            </div>
                         </div>
-                        <div class="form-group px-4 pt-2">
-                            <label for="nama_user">Nama</label>
-                            <input required type="text" name="nama_user" id="nama_user" class="form-control" placeholder="Namamu..." aria-describedby="namaId">
-                            <small id="namaId" class="text-muted"></small>
+                        <div class="container px-5">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="holder py-3">
+                                        <div class="input-holder">
+                                            <select class="w-100" name="gender" id="gender">
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                            </select>
+                                          <div class="placeholder">Email</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="holder py-3">
+                                        <div class="input-holder">
+                                            <select class="w-100" name="jurusan" id="jurusan">
+                                                <option>Mipa</option>
+                                                <option>Ips</option>
+                                                <option>Bahasa</option>
+                                            </select>
+                                          <div class="placeholder">Jurusan</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <button class="w-100 btn btn-primary btn-lg py-3 rounded-lg mt-4">Submit</button>
+                    </form>
+                    <form action="" id="guru-form" class="w-100 d-none">
+                        <div class="holder px-5 py-2">
+                            <div class="input-holder">
+                              <input class="input py-4 w-100" type="text" placeholder=" ">
+                              <div class="placeholder">Nip</div>
+                            </div>
+                        </div>
+                        <div class="container px-5">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="holder py-3">
+                                        <div class="input-holder">
+                                            <select class="w-100" name="gender" id="gender">
+                                                <option>Pak</option>
+                                                <option>Bu</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="holder py-3">
+                                        <div class="input-holder">
+                                          <input class="input py-4 w-100" type="text" placeholder=" ">
+                                          <div class="placeholder">Nama</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="holder px-5 py-2">
+                            <div class="input-holder">
+                              <input class="input py-4 w-100" type="text" placeholder=" ">
+                              <div class="placeholder">Email</div>
+                            </div>
+                        </div>
+                        <div class="holder px-5 py-3">
+                            <div class="input-holder">
+                                <select class="w-100" name="jurusan" id="jurusan">
+                                    <option>Mipa</option>
+                                    <option>Ips</option>
+                                    <option>Bahasa</option>
+                                </select>
+                              <div class="placeholder">Guru Mapel</div>
+                            </div>
+                        </div>
+                        <button class="w-100 btn btn-primary btn-lg py-3 rounded-lg mt-4">Submit</button>
+                    </form>
+                    <form action="" id="lainnya-form" class="w-100 d-none">
+                        <div class="holder px-5 py-2">
+                            <div class="input-holder">
+                              <input class="input py-4 w-100" type="text" placeholder=" ">
+                              <div class="placeholder">Nip</div>
+                            </div>
+                        </div>
+                        <div class="container px-5">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="holder py-3">
+                                        <div class="input-holder">
+                                            <select class="w-100" name="gender" id="gender">
+                                                <option>Laki laki</option>
+                                                <option>Perempuan</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="holder py-3">
+                                        <div class="input-holder">
+                                          <input class="input py-4 w-100" type="text" placeholder=" ">
+                                          <div class="placeholder">Nama</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="holder px-5 py-2">
+                            <div class="input-holder">
+                              <input class="input py-4 w-100" type="text" placeholder=" ">
+                              <div class="placeholder">Email</div>
+                            </div>
+                        </div>
+                        <button class="w-100 btn btn-primary btn-lg py-3 rounded-lg mt-4">Submit</button>
                     </form>
                 </div>
             </div>
@@ -103,4 +227,38 @@
 <script src="../src/js/all.min.js"></script>
 <script src="../src/js/fontawesome.min.js"></script>
 <script src="../src/js/script.js"></script>
+<script>
+    $(document).ready(function() {
+        $('select').change(function() {
+            let value = $(this).val
+            if(value !== "") {
+                $(this).next('.placeholder').addClass('placeholder-active')
+            }
+        })
+        $('#siswa-toggle').click(function() {
+            $(this).addClass('bg-primary-light').removeClass('border')
+            $('#guru-toggle').removeClass('bg-primary-light').addClass('border')
+            $('#lainnya-toggle').removeClass('bg-primary-light').addClass('border')
+            $('#siswa-form').addClass('d-inline-block').removeClass('d-none')
+            $('#guru-form').removeClass('d-inline-block').addClass('d-none')
+            $('#lainnya-form').removeClass('d-inline-block').addClass('d-none')
+        })
+        $('#guru-toggle').click(function() {
+            $(this).addClass('bg-primary-light').removeClass('border')
+            $('#siswa-toggle').removeClass('bg-primary-light').addClass('border')
+            $('#lainnya-toggle').removeClass('bg-primary-light').addClass('border')
+            $('#guru-form').addClass('d-inline-block').removeClass('d-none')
+            $('#siswa-form').removeClass('d-inline-block').addClass('d-none')
+            $('#lainnya-form').removeClass('d-inline-block').addClass('d-none')
+        })
+        $('#lainnya-toggle').click(function() {
+            $(this).addClass('bg-primary-light').removeClass('border')
+            $('#guru-toggle').removeClass('bg-primary-light').addClass('border')
+            $('#siswa-toggle').removeClass('bg-primary-light').addClass('border')
+            $('#lainnya-form').addClass('d-inline-block').removeClass('d-none')
+            $('#siswa-form').removeClass('d-inline-block').addClass('d-none')
+            $('#guru-form').removeClass('d-inline-block').addClass('d-none')
+        })
+    })
+</script>
 </html>

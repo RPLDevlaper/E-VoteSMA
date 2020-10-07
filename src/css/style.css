@@ -149,7 +149,7 @@ label 				 {
 .input-google:focus ~ label, .input-google:valid ~ label 		{
   top:-20px;
   font-size:14px;
-  color:#5264AE;
+  color:#9CC6F9;
 }
 
 /* BOTTOM BARS ================================= */
@@ -160,7 +160,7 @@ label 				 {
   width:0;
   bottom:1px; 
   position:absolute;
-  background:#5264AE; 
+  background:#9CC6F9; 
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
@@ -361,22 +361,79 @@ label 				 {
     }
 }
 
-
-
-
 /* end verify */
 /* end verify */
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:#9CC6F9; }
   to 	{ width:0; background:transparent; }
 }
 @-moz-keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:#9CC6F9; }
   to 	{ width:0; background:transparent; }
 }
 @keyframes inputHighlighter {
 	from { background:#5264AE; }
   to 	{ width:0; background:transparent; }
 }
+
+
+.rounded-lg {
+  border-radius: 10px !important;
+}
+.placeholder {
+  top: 22px;
+  left: 20px;
+}
+
+
+.input-holder {
+  position: relative;
+}
+
+.input, select {
+    height: 28px;
+    font-size: 16px;
+    padding: 13px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(199, 199, 199);
+    width: 300px;
+    outline: none;
+}
+
+select {
+  height: auto !important;
+  padding: .75rem !important;
+}
+
+.input:not(:placeholder-shown).input:not(:focus) + .placeholder {
+  transform: scale(.75) translateY(-39px) translateX(-5px);
+  color: grey;
+}
+
+select:focus + .placeholder {
+  transform: scale(.75) translateY(-39px) translateX(-5px);
+  color: grey;
+}
+
+.input:focus {
+  border-color: #53B2C8;
+} 
+select:focus {
+  border-color: #53B2C8;
+}
+
+.input:focus + .placeholder, .placeholder-active {
+  transform: scale(.75) translateY(-39px) translateX(-5px);
+  color: #53B2C8;
+} 
+
+.placeholder {
+  position: absolute;
+  top: 20px;
+  left: 8px;
+  padding: 0 8px;
+  background-color: white;
+  transition: transform 150ms cubic-bezier(0.4,0,0.2,1), opacity 150ms cubic-bezier(0.4,0,0.2,1);
+  color: grey;
 }
