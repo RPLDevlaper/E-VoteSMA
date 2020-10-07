@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voting</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="src/css/all.min.css">
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/fontawesome.min.css">
@@ -13,30 +14,31 @@
 
 <body class="bg-home">
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow position-fixed w-100">
         <a class="navbar-brand" href="#">
             <div class="d-flex">
-                <img src="img/logo/smanesa.png" width="40px" height="40px" class="mt-2 mx-3" alt="">
+                <img src="img/logo/smanesa.png" width="40px" height="40px" class="mt-2 mx-3" alt=""> 
                 <div class="d-inline-block mt-2" style="font-size: .9rem;">
                     E-VOTING <br> <span class="position-relative" style="top: -5px;">SMANESA</span>
                 </div>
             </div>
         </a>
-        <button class="ml-auto btn btn-primary my-2 my-sm-0 px-4 py-2" type="submit">Search</button>
+        <button onclick="window.location.href = 'common/form.html'" class="ml-auto btn btn-primary my-2 my-sm-0 px-4 py-2" type="submit">Start Vote</button>
     </nav>
-    <div class="container">
+
+    <div class="container mt-5 pt-5">
         <div class="text-center  main">
            <h1 class="text-light">E-Voting Calon Ketua Osis</h1>
            <h1 class="text-light">SMA Negeri 1 Purwosari 2020 - 2021</h1>
-           <button class="btn btn-white bold px-5 mt-4 py-2">Start Vote</button>
+           <button class="btn btn-white bold px-5 mt-4 py-2" onclick="window.location.href='common/form.html'">Start Vote</button>
         </div>
     </div>
     <footer class="p-absolute b-0">
         <div class="mx-4">
-            <div class="row">
-                <div class="col-md-12 d-flex">
-                    <img src="img/team.png" class="img-footer" alt="">
-                    <p class="mt-2 mx-3 text-light">2020 Developed by Sidescript developer</p>
+            <div class="row pb-3 pl-4">
+                <div class="col-md-12 text-white">
+                    <img src="img/team.png" width="40px" alt="">
+                    @2020 Developed by <a class="text-white" href="https://www.instagram.com/sidescript_dev/">SideScript Developer</a>
                 </div>
             </div>
         </div>
