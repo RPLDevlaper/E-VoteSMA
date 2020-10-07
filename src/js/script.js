@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    AOS.init()
     function toggleNav() {
         $('#toggle-nav').toggleClass('nav-menus-show')
         $('#toggle-nav-closeable').toggleClass('overlay-show')
